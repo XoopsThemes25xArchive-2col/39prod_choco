@@ -1,0 +1,535 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 2.0) - 22 mai 2007 */
+
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+
+* { margin: 0; padding: 0; border: none; outline: none; text-decoration: none;}
+
+html, body {
+	font-size: 10px; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background-color: #000;
+	color: #333;
+}
+table { width: 					100%;}
+table td {
+	padding: 						0;
+	border-width: 					0;
+	vertical-align: 				top;
+}
+/* ======= encapsulage du thème dans le body ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+	text-align: left;
+	width: 760px;
+	margin: 20px auto 20px auto;
+	padding: 0px;
+	background-color: transparent;
+	background-image: url(img/jillijbgwide.jpg);
+	background-repeat: repeat-y;
+	background-attachment: scroll;
+	background-x-position: center;
+	background-y-position: top;
+	border-width: medium;
+	border-style: none;
+	border-color: -moz-use-text-color;
+}
+
+body.theme-dialog #xo-canvas {
+	margin:							0 6px;
+}
+/*================= Zone de contenu ===================*/
+#xo-canvas-content {
+
+	color:							#000;
+	background-color: 			#c6c7c9;
+	font-size: 1.2em;
+	width: 650px;
+	margin: 0 auto 0 auto;
+	
+}
+#xo-page {
+width:650px;
+	color:							#666;
+	background-color:				#fff;
+}
+#xo-canvas-rightcolumn {padding: .5em;}
+#xo-content {
+	clear:							both;
+	margin:							0;
+	color:							#333;
+	background-color:				inherit;
+	width: 650px;
+}
+#xo-uptop {
+	margin: 							0;
+	padding-top: 					5px;
+	font-size: 						.9em;
+	text-align:						right;
+	background-color:#000000;
+}
+#xo-uptop a {
+	color: 							#fff;
+	background-color: 			transparent;
+}
+#xo-uptop a:hover {
+color: 								#fff;
+background-color: 				inherit;
+}
+#xo-logger-output { font-size:	.8em;}
+/* ============== header ================= */
+#topheader { 
+background-color: transparent;
+background-image: url(img/jillijbgtop.jpg);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-x-position: center;
+background-y-position: bottom;
+padding: 0;
+height: 18px;
+width: 760px;
+	}
+
+
+#headerimg {
+	margin: 0;
+	height: 182px;
+	width: 720px;	
+	background: url("img/jillijheader.jpg") no-repeat bottom center;
+	}
+
+#header {
+	margin: 0 auto 0 auto;
+	height: 182px;
+	width: 720px;
+	background-color: transparent;
+	}
+#xo-top {
+	height: 							32px;
+	color: 							#333;
+	background-color:				#E2E2E2;
+}
+
+/*---------------------- Nom du site dans le header ----------------------------*/
+#xo-site-title {
+	position: 						relative;
+	top: 								10px;
+	padding: 						10px 0 0 20px;
+	background-color: 			transparent;
+	font-family:	 				"Lucida Grande","Trebuchet MS", Verdana, sans-serif;
+	font-size:						2.2em;
+	font-weight:					bold;
+}
+a#xo-site-title {
+	color:						#fff;
+	background-color: 			transparent;
+	text-transform: 			uppercase;
+}
+a:hover#xo-site-title {
+	color: 							#fff;
+	background-color: 			inherit;
+
+	text-decoration:underline;
+}
+#xo-site-title.commercial {
+	margin: 							0 20px;
+	padding: 						10px 0 0 0px;
+ }
+ #xo-site-title .commercial a:hover {
+	color:							#EAAD7B;
+	background-color: 			inherit;
+}
+/*----------------------- titre du slogan du site dans le header ------------------------*/
+#xo-site-slogan {
+	position: 						relative;
+	top: 								10px;
+	padding-left: 					70px;
+	color: 							#fff;
+	background-color:				transparent;
+	font-style: 					italic;
+}
+#xo-site-slogan.commercial {}
+
+
+/*============== Styles pour l'include userbar.html =================*/
+#xo-userbar {
+	display:						block;
+	position: 						absolute;
+	top: 							190px;
+	margin-left: 					200px;
+	padding-top: 					2px;
+	padding-right:					1em;
+	color:							#fff;
+	background-color: 			transparent;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0 -3px;
+	padding:							0;
+	background:						transparent none;
+	border:							none;
+}
+#xo-userbar button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar img {
+	width: 							18px;
+	height: 							18px;
+}
+#xo-userbar input {
+	width: 							80px;
+	color:							#000;
+	background-color: 			#fff;
+}
+#xo-userbar input:hover {
+	color:							#000;
+	background-color: 			#fff;
+}
+#xo-userbar a {
+	color: #fff;
+	background-color: 			inherit;
+	text-decoration:				none;
+	text-transform:uppercase;
+}
+#xo-userbar a:hover {
+text-decoration:underline;
+	background-color: 			inherit;
+}
+#xo-uname {
+	color:							#ff0000;
+	background-color:				transparent;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+/*============== Styles pour l'include searchbar.html =================*/
+#xo-searchbar {
+	display:						block;
+	float: 							right;
+	margin-top: 					5px;
+	margin-right : 					1em;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+#xo-searchbar input[type=text]{
+	color:							#000;
+	background-color: 			#fff;
+}
+#xo-searchbar input[type=text]:hover {
+	color:							#000;
+	background-color:				#fff;
+}
+/*------------------- Affichage des drapeaux de langues ----------------*/
+#xo-language {
+	display: 						block;
+	float:							left;
+	margin-top :					5px;
+	padding-left: 					1em;
+	color:							#666;
+	background-color: 			transparent;
+}
+#xo-language img{
+	width: 							22px;
+	height: 							22px;
+}
+/*============= Style pour l'include globalnav.html ================*/
+#sidebar {
+	display: block;
+	border: 0px;
+	padding: 0px 0 0px 0;
+	margin: 0px 0 2px 20px;
+	z-index: 5;
+	text-align:center
+		
+}
+
+#sidebar ul {
+	width:720px;
+	min-height: 30px;
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0 0px 0;
+	z-index: 500;	
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+#sidebar li {
+	display: inline;
+	float: left;
+	min-height: 20px;
+	position: relative;
+	text-align: left;
+	padding: 5px 16px 5px;
+	margin: 0px 0px 0px 0px;
+}
+
+#sidebar h2 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 1em;
+}
+
+#sidebar li ul {
+	width: 150px;
+	height: auto;
+	top: 100%;
+	left: 0px;		
+	font-weight: normal;
+	font-size: 1em;
+}
+
+#sidebar li.LargeMenu ul {
+	width: 200px;
+	height: auto;
+	top: 100%;
+	left: 0px;
+}
+
+#sidebar li ul li {
+	text-align: left;
+	width: 118px;	
+	height: auto;
+	min-height: auto;
+	display: block;
+}
+
+#sidebar li.LargeMenu ul li {
+	text-align: left;
+	width: 198px;	
+	height: auto;
+	min-height: auto;
+	display: block;
+}
+
+#sidebar a {
+	text-decoration: none;
+	}
+
+#sidebar li li ul {
+	top: 0;
+	left: 0;
+}
+
+#sidebar li li:hover ul {
+	left: 150px;
+}
+
+/* initialy hide all sub sidemenus */
+#sidebar ul ul,
+#sidebar ul li:hover ul ul,
+#sidebar ul ul li:hover ul ul,
+#sidebar ul ul ul li:hover ul ul,
+#sidebar ul ul ul ul li:hover ul ul {
+	position: absolute;
+	display:none;
+}
+
+/* display them on hover */
+#sidebar li:hover ul,
+#sidebar ul li:hover ul,
+#sidebar ul ul li:hover ul,
+#sidebar ul ul ul li:hover ul,
+#sidebar ul ul ul ul li:hover ul,
+#sidebar ul ul ul ul ul li:hover ul {
+ 	 display: block;
+}
+
+#sidebar #PhpWebcontent {
+	display:none;
+}	
+
+/* define the consecutive colors */
+
+#sidebar {
+	color: #FFFFFF;
+}
+
+#sidebar ul{
+	background: #000000;
+	-moz-opacity:0.88; /* for mozilla */
+	opacity: 0.88; /* for safari */
+	khtml-opacity: 0.88 /* for konquerer and older safari */
+}
+
+#sidebar ul ul {
+	background: #000000;
+}
+#sidebar ul li {
+	background: #000000;
+}
+
+#feeds li {
+  background: url(img/feed.png) top left no-repeat;
+  padding-left: 18px;
+}
+
+#sidebar h2 {
+	color: #FFFFFF;
+}
+
+#sidebar a {
+	color: #FFFFFF;
+	}
+
+#sidebar ul li:hover {
+	background: #333333;
+}
+
+#sidebar ul li ul {
+
+}
+
+#sidebar ul li ul li {
+	background: #333333;
+}
+
+#sidebar ul li ul li:hover {
+	background: #666666;
+}
+
+#sidebar ul li ul ul li{
+	background: #666666;
+	
+}
+
+#sidebar ul li ul ul li:hover {
+	background: #999999;
+}
+/*=============== Affichage Pied de page - Footer  ====================*/
+#footer {
+	padding: 0;
+	margin: 0 auto;
+	width: 760px;
+	height: 63px;
+	clear: both;
+	background-color: transparent;
+	background-image: url(img/jillijfooter.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-x-position: center;
+	background-y-position: center;
+	}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	}
+
+.rss { text-align:center;}
+.design { text-align:center;}
+	
+/*========== Menu principal dans bloc =============*/
+#mainmenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						1px;
+	font-weight: 					500;
+}
+#mainmenu a:hover {
+	text-decoration:				none !important;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 8px; }
+#mainmenu a.menuSub {
+	padding-left: 					20px;
+	color:							#fff;
+	background-color:				inherit;
+	font-size:						.8em;
+	font-style: 					italic;
+}
+#mainmenu a.menuSub:hover {
+	color:							#32529C;
+	background-color: 			inherit;
+}
+
+/*============ Menu utilisateur dans bloc ============*/
+#usermenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						2px;
+	color:							#32529C;
+	background-color: 			inherit;
+	font-weight: 					normal;
+	font-size: 						0.8em;
+	line-height: 					1em;
+}
+#usermenu a:hover {
+	padding-left: 					3em;
+	color:							#666;
+	background-color: 			inherit;
+	font-style: 					italic;
+	text-decoration:				none !important;
+	border-left:					1px solid #666;
+	border-bottom:					1px solid #666;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	color: 							#ccc;
+	background-color: 			#333;
+}
+
+/*=========== Règles nécessaires pour les anciens templates des modules ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}
+
+
+/*============== Styles pour system_siteclosed.html =================*/
+#xo-siteclose {
+	margin:							50px;
+	padding:							30px;
+	width:							400px;
+	color:							#000;
+	background-color:				#e2e2e2;
+	border:							1px solid #7d7d7d;
+	font-size: 						1.2em;
+	font-weight: 					bold;
+}
+/*============== Styles pour system_redirect.html =================*/
+#xo-redirect {
+	width:							780px;
+	margin:							50px auto;
+	padding:							1em;
+	text-align:						center;
+	font-weight:					bold;
+}
+
+#xo-redirect .notreload {
+	padding-top:					2px;
+	height:							28px;
+	color:							#fff;
+	background-color:				inherit;
+}
+
+#xo-redirect .notreload a {
+	color:							#cc0000;
+	background-color: 			transparent;
+	font-weight:					bold;
+	text-decoration: 				none;
+}
+
+#xo-redirect .message {
+	padding:							1em;
+	min-height:						60px;
+	color:							#333;
+	background-color: 			#f3f3f3;
+	border:		 					solid 1px #546f90;
+	font-size:						1.2em;
+	text-align:						center;
+}
+#xo-redirect .message img{
+	padding:							1em;
+}
